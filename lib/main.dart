@@ -1,37 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gdsc_instr_sessions/facebook_screen.dart';
 void main( ) {
  runApp(
-    MaterialApp(
-      home: Scaffold(
-       appBar: AppBar(
-         centerTitle: true,
-         elevation: 0,
-
-         foregroundColor: Colors.black,
-         backgroundColor: Colors.transparent,
-      // leading: Icon(Icons.home),
-      title: Text(
-        "Login Screen",
-        style: TextStyle(
-          fontSize: 30,
-          color: Colors.amber,
-        ),
-      ),
-      actions: [
-        Icon(
-          Icons.person,
-       ) ,
-        Icon(
-            Icons.person
-        ) ,
-      ],
-
-    ),
-
-      ),
-      debugShowCheckedModeBanner: false,
-
-    )
+    MyApp()
   );
 
 //
@@ -40,6 +11,14 @@ void main( ) {
 
 
 
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-// StatelessWidget
-// StatefulWidget
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home:FaceBookScreen() ,
+
+    );
+  }
+}
