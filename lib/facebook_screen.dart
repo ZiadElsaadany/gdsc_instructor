@@ -1,447 +1,356 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
-class FaceBookScreen extends StatelessWidget {
-  const FaceBookScreen({Key? key}) : super(key: key);
-
+class FacebookScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+
       appBar: AppBar(
-        title: Text("Home"),
+        title:Text( "Home"
+
+        )  ,
       ),
-      body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
-        child: Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Column (
+
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: SingleChildScrollView(
+          child: Column(
             children: [
               SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
+
+                scrollDirection:Axis.horizontal ,
+
                 child: Row(
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
-
-                        children: [
-                          Image.asset("assets/images/facebookStory.jpg",
+                  ClipRRect(
+                    borderRadius:  BorderRadius.circular(20.0),
+                    child: Stack(
+                      children: [
+                        Image.asset(
+                          "assets/images/facebookStory.jpg",
                           height: 150,
+                        ),
+
+                        CircleAvatar(
+                          child:  Icon(Icons.person  ,
+                            color: Colors.white,
                           ),
-                          CircleAvatar(
-  child: Icon(Icons.person , color: Colors.white,),
+                        ),
 
-),
-                          Positioned(
+                        Positioned(
                             bottom: 0,
-                            child: Text("OWNER",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 25,
-                  color: Colors.white,
-                              fontWeight: FontWeight.bold
-                            ),
-                            ),
-                          )
+                            child:Text("Owner",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white
+                              ),
+                            )
+                        ),
+                      ],
+                    ),
+                  ),
 
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius:  BorderRadius.circular(20.0),
                       child: Stack(
-
                         children: [
-                          Image.asset("assets/images/facebookStory.jpg",
-                          height: 150,
-                          ),
-                          CircleAvatar(
-  child: Icon(Icons.person , color: Colors.white,),
-
-),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 25,
-                  color: Colors.white,
-                              fontWeight: FontWeight.bold
-                            ),
-                            ),
-                          )
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
-
-                        children: [
-                          Image.asset("assets/images/facebookStory.jpg",
+                          Image.asset(
+                            "assets/images/facebookStory.jpg",
                             height: 150,
                           ),
+
                           CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
+                            child:  Icon(Icons.person  ,
+                              color: Colors.white,
                             ),
-                          )
+                          ),
 
+                          Positioned(
+                              bottom: 0,
+                              child:Text("Owner",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                ),
+                              )
+                          ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius:  BorderRadius.circular(20.0),
                       child: Stack(
-
                         children: [
-                          Image.asset("assets/images/facebookStory.jpg",
+                          Image.asset(
+                            "assets/images/facebookStory.jpg",
                             height: 150,
                           ),
+
                           CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
+                            child:  Icon(Icons.person  ,
+                              color: Colors.white,
                             ),
-                          )
+                          ),
 
+                          Positioned(
+                              bottom: 0,
+                              child:Text("Owner",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                ),
+                              )
+                          ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
 
+                    ClipRRect(
+                      borderRadius:  BorderRadius.circular(20.0),
+                      child: Stack(
                         children: [
-                          Image.asset("assets/images/facebookStory.jpg",
+                          Image.asset(
+                            "assets/images/facebookStory.jpg",
                             height: 150,
                           ),
+
                           CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
+                            child:  Icon(Icons.person  ,
+                              color: Colors.white,
                             ),
-                          )
+                          ),
 
+                          Positioned(
+                              bottom: 0,
+                              child:Text("Owner",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                ),
+                              )
+                          ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
 
+                    ClipRRect(
+                      borderRadius:  BorderRadius.circular(20.0),
+                      child: Stack(
                         children: [
-                          Image.asset("assets/images/facebookStory.jpg",
+                          Image.asset(
+                            "assets/images/facebookStory.jpg",
                             height: 150,
                           ),
+
                           CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
+                            child:  Icon(Icons.person  ,
+                              color: Colors.white,
                             ),
-                          )
+                          ),
 
+                          Positioned(
+                              bottom: 0,
+                              child:Text("Owner",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                ),
+                              )
+                          ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius:  BorderRadius.circular(20.0),
                       child: Stack(
-
                         children: [
-                          Image.asset("assets/images/facebookStory.jpg",
+                          Image.asset(
+                            "assets/images/facebookStory.jpg",
                             height: 150,
                           ),
+
                           CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
+                            child:  Icon(Icons.person  ,
+                              color: Colors.white,
                             ),
-                          )
+                          ),
 
+                          Positioned(
+                              bottom: 0,
+                              child:Text("Owner",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                ),
+                              )
+                          ),
                         ],
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
 
-                        children: [
-                          Image.asset("assets/images/facebookStory.jpg",
-                            height: 150,
-                          ),
-                          CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
 
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          )
 
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
-
-                        children: [
-                          Image.asset("assets/images/facebookStory.jpg",
-                            height: 150,
-                          ),
-                          CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          )
-
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Stack(
-
-                        children: [
-                          Image.asset("assets/images/facebookStory.jpg",
-                            height: 150,
-                          ),
-                          CircleAvatar(
-                            child: Icon(Icons.person , color: Colors.white,),
-
-                          ),
-                          Positioned(
-                            bottom: 0,
-                            child: Text("OWNER",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          )
-
-                        ],
-                      ),
-                    ),
 
                   ],
                 ),
-              ) ,
-SizedBox(
-  height: 20,
-),
-
-              Row(
-                children: [
-                  CircleAvatar(
-                    child: Icon(Icons.person, color: Colors.white,),
-                    backgroundColor: Colors.black,
-                  ),
-                  SizedBox(
-
-                    width: 20,
-                  ),
-                  Column(
-                    children: [
-                      Text("Owner",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
-                      ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Row(
-                        children: [
-                          Text("3h "),
-                          Icon(Icons.account_box)
-                        ],
-                      )
-                    ],
-                  )
-                ],
               ),
+             SizedBox(
+               height: 20,
+             ),
+               
+
+               Row(
+                 children: [
+                   CircleAvatar(
+                     child: Icon(Icons.person,
+                     color: Colors.white,
+                     ),
+                     backgroundColor: Colors.black,
+                   ),
+                   SizedBox(
+                     width: 15,
+                   ),
+
+                   Column(
+                     children: [
+                       Text("Owner",
+                       style: TextStyle(
+                         fontWeight: FontWeight.bold,
+                       ),
+                       ),
+                       Row(
+                         children: [
+                           Text("3h"),
+                           Icon(Icons.star)
+                         ],
+                       )
+                     ],
+                   )
+                 ],
+               ),
               SizedBox(
-                 height: 20,
+                height: 20,
               ),
               Align(
                 alignment: Alignment.centerLeft,
-                child: Text("My Post",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25
-                  ),
+                child: Text("NEW POST",
+                style: TextStyle(
+                  fontWeight:  FontWeight.bold ,
+                  fontSize: 20,
+
+                ),
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                Text("100 "),
-                Image.asset("assets/images/like.jpg",
-                  height: 25,),
-                  Spacer(),
-                  Text("100 Comments")
+                  Text("100  "),
+                  Image.asset("assets/images/like.jpg",
+                  height: 25,
+                  ),
+                  Spacer(
+                    flex: 1,
+                  ),
+                  Text("100 comments"),
 
                 ],
               ),
-              Divider(
-                thickness: 2 ,
-              ),
               SizedBox(
-                height: 10,
+                height: 10 ,
+              ),
+              Divider(
+                color: Colors.grey,
+                thickness: 2,
+              ) ,
+              SizedBox(
+                height: 10 ,
               ),
               Row(
-                children: [
-                 Image.asset("assets/images/singleLike.jpg",
-                 height: 30,
-                 ),
-                 Text("  Like")  ,
-                 Spacer( ),
-                 Image.asset("assets/images/comment.jpg",
-                 height: 30,
-                 ),
-                  Text("  Comment"),
-                  Spacer( ),
+             children: [
+               Image.asset("assets/images/singleLike.jpg",
+               height: 25,
+               ),
+               SizedBox(
+                 width: 10,
+               ),
+               Text("Like  "),
+               Spacer(),
+               Image.asset("assets/images/comment.jpg",
+               height: 25,
+               ),
+               SizedBox(
+                 width: 10,
+               ),
+               Text("comment  "),
 
+               Spacer(),
+               Image.asset("assets/images/share.png",
+               height: 25,
+               ),
+               SizedBox(
+                 width: 10,
+               ),
+               Text("Share  "),
 
-                  Image.asset("assets/images/share.png",
-                 height: 30,
-                 ),
-                  Text("  Share"),
-
-                ],
-              ),
+             ],
+           ),
               SizedBox(
-                height: 10,
+                height: 10 ,
               ),
-
-
               Divider(
-                thickness: 2 ,
-              ),
+                color: Colors.grey,
+                thickness: 2,
+              ) ,
+
+
               Row(
                 children: [
                   CircleAvatar(
-                    child: Icon(Icons.person, color: Colors.white,),
+                    child: Icon(Icons.person,
+                      color: Colors.white,
+                    ),
                     backgroundColor: Colors.black,
                   ),
                   SizedBox(
-
-                    width: 20,
+                    width: 15,
                   ),
+
                   Column(
                     children: [
                       Text("Owner",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18
+                          fontWeight: FontWeight.bold,
                         ),
-                      ),
-                      SizedBox(
-                        height: 5,
                       ),
                       Row(
                         children: [
-                          Text("3h "),
-                          Icon(Icons.account_box)
+                          Text("3h"),
+                          Icon(Icons.star)
                         ],
                       )
                     ],
@@ -453,10 +362,11 @@ SizedBox(
               ),
               Align(
                 alignment: Alignment.centerLeft,
-                child: Text("My Post",
+                child: Text("NEW POST",
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25
+                    fontWeight:  FontWeight.bold ,
+                    fontSize: 20,
+
                   ),
                 ),
               ),
@@ -464,57 +374,199 @@ SizedBox(
                 height: 20,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("100 "),
+                  Text("100  "),
                   Image.asset("assets/images/like.jpg",
-                    height: 25,),
-                  Spacer(),
-                  Text("100 Comments")
+                    height: 25,
+                  ),
+                  Spacer(
+                    flex: 1,
+                  ),
+                  Text("100 comments"),
 
                 ],
               ),
-              Divider(
-                thickness: 2 ,
-              ),
               SizedBox(
-                height: 10,
+                height: 10 ,
+              ),
+              Divider(
+                color: Colors.grey,
+                thickness: 2,
+              ) ,
+              SizedBox(
+                height: 10 ,
               ),
               Row(
                 children: [
                   Image.asset("assets/images/singleLike.jpg",
-                    height: 30,
+                    height: 25,
                   ),
-                  Text("  Like")  ,
-                  Spacer( ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("Like  "),
+                  Spacer(),
                   Image.asset("assets/images/comment.jpg",
-                    height: 30,
+                    height: 25,
                   ),
-                  Text("  Comment"),
-                  Spacer( ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("comment  "),
 
-
+                  Spacer(),
                   Image.asset("assets/images/share.png",
-                    height: 30,
+                    height: 25,
                   ),
-                  Text("  Share"),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("Share  "),
 
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: 10 ,
               ),
-
               Divider(
-                thickness: 2 ,
+                color: Colors.grey,
+                thickness: 2,
+              ) ,
+
+
+
+              Row(
+                children: [
+                  CircleAvatar(
+                    child: Icon(Icons.person,
+                      color: Colors.white,
+                    ),
+                    backgroundColor: Colors.black,
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+
+                  Column(
+                    children: [
+                      Text("Owner",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Text("3h"),
+                          Icon(Icons.star)
+                        ],
+                      )
+                    ],
+                  )
+                ],
               ),
+              SizedBox(
+                height: 20,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text("NEW POST",
+                  style: TextStyle(
+                    fontWeight:  FontWeight.bold ,
+                    fontSize: 20,
+
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Text("100  "),
+                  Image.asset("assets/images/like.jpg",
+                    height: 25,
+                  ),
+                  Spacer(
+                    flex: 1,
+                  ),
+                  Text("100 comments"),
+
+                ],
+              ),
+              SizedBox(
+                height: 10 ,
+              ),
+              Divider(
+                color: Colors.grey,
+                thickness: 2,
+              ) ,
+              SizedBox(
+                height: 10 ,
+              ),
+              Row(
+                children: [
+                  Image.asset("assets/images/singleLike.jpg",
+                    height: 25,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("Like  "),
+                  Spacer(),
+                  Image.asset("assets/images/comment.jpg",
+                    height: 25,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("comment  "),
+
+                  Spacer(),
+                  Image.asset("assets/images/share.png",
+                    height: 25,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("Share  "),
+
+                ],
+              ),
+              SizedBox(
+                height: 10 ,
+              ),
+              Divider(
+                color: Colors.grey,
+                thickness: 2,
+              ) ,
+
+
+
+
 
 
 
             ],
+
           ),
         ),
-      ),
+      ) ,
+
+
+
     );
   }
+
+
+
 }
+// CircleAvatar
+// Stack
+// ClipRRect
+//Align
+// positioned
+// spacer  --> flex  = 1
+// Divider
+// SizedBox
+// Padding
+//SingleChildScrollView
